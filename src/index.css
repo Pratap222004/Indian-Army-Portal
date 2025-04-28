@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  @apply bg-neutral-100;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.2;
+}
+
+.btn {
+  @apply px-6 py-2 font-medium transition-all duration-300 shadow-button rounded;
+}
+
+.btn-primary {
+  @apply bg-primary-500 text-white hover:bg-primary-600;
+}
+
+.btn-secondary {
+  @apply bg-secondary-500 text-white hover:bg-secondary-600;
+}
+
+.btn-accent {
+  @apply bg-accent-500 text-white hover:bg-accent-600;
+}
+
+.btn-gold {
+  @apply bg-gold-500 text-secondary-800 hover:bg-gold-600;
+}
+
+.section-title {
+  @apply text-3xl md:text-4xl font-bold mb-8 text-secondary-800 relative;
+}
+
+.section-title::after {
+  content: '';
+  @apply absolute bottom-[-10px] left-0 w-20 h-1 bg-accent-500;
+}
+
+.container {
+  @apply px-4 mx-auto max-w-7xl;
+}
+
+.news-card {
+  @apply bg-white p-4 rounded-lg shadow-card hover:shadow-lg transition-shadow duration-300;
+}
+
+.animate-fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.card {
+  @apply bg-white rounded-lg shadow-card overflow-hidden transition-all duration-300 hover:shadow-lg;
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+}
+
+.image-hover-zoom {
+  @apply transition-transform duration-500 hover:scale-105;
+}

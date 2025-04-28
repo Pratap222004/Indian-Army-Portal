@@ -1,0 +1,64 @@
+{
+  "news": [
+    {
+      "id": 1,
+      "title": "Indian Army Conducts Joint Military Exercise with US Forces",
+      "summary": "The Indian Army and US Forces successfully conducted a joint military exercise aimed at enhancing interoperability and sharing best practices.",
+      "content": "The two-week long exercise focused on counter-terrorism operations, tactical maneuvers, and sharing of operational experiences. Senior officials from both armies expressed satisfaction with the outcomes.",
+      "date": "2025-01-15",
+      "category": "Operations",
+      "image": "https://images.pexels.com/photos/6502344/pexels-photo-6502344.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": 2,
+      "title": "New Recruitment Drive Announced for Technical Positions",
+      "summary": "Indian Army announces a nationwide recruitment drive for technical positions including engineering, medical, and IT specialists.",
+      "content": "The recruitment drive will begin next month and will cover 20 major cities. Interested candidates can apply online through the official portal.",
+      "date": "2025-01-12",
+      "category": "Recruitment",
+      "image": "https://images.pexels.com/photos/8001455/pexels-photo-8001455.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    }
+  ],
+  "careers": [
+    {
+      "id": 1,
+      "title": "National Defence Academy",
+      "category": "Officer Entry",
+      "eligibility": "12th pass (PCM), Age: 16.5-19.5 years",
+      "applyBy": "2025-03-15",
+      "location": "Pan India",
+      "description": "Join the prestigious NDA for a career as an officer in the Indian Army. The training includes a rigorous program at NDA followed by IMA.",
+      "image": "https://images.pexels.com/photos/1544376/pexels-photo-1544376.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": 2,
+      "title": "Technical Graduate Course",
+      "category": "Technical Entry",
+      "eligibility": "Engineering graduates, Age: Below 27 years",
+      "applyBy": "2025-02-28",
+      "location": "Pan India",
+      "description": "Engineering graduates can join the Indian Army as officers through the Technical Graduate Course, serving in various technical arms and services.",
+      "image": "https://images.pexels.com/photos/3862130/pexels-photo-3862130.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    }
+  ],
+  "gallery": [
+    {
+      "id": 1,
+      "type": "image",
+      "title": "Republic Day Parade",
+      "category": "Ceremonies",
+      "description": "Indian Army contingent marching during the Republic Day parade in New Delhi.",
+      "date": "2025-01-26",
+      "url": "https://images.pexels.com/photos/6233987/pexels-photo-6233987.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": 2,
+      "type": "image",
+      "title": "Mountain Warfare Training",
+      "category": "Training",
+      "description": "Soldiers undergoing rigorous training in high-altitude mountain warfare techniques.",
+      "date": "2024-12-15",
+      "url": "https://images.pexels.com/photos/10398810/pexels-photo-10398810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    }
+  ]
+}
