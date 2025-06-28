@@ -50,15 +50,17 @@ const RecruitmentSection = () => {
   }, [])
 
   return (
-    <div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 recruitment-section">
-        <div className="animate-fade-in">
-          <p className="text-lg text-neutral-300 mb-6">
-            The Indian Army offers diverse career opportunities for youth seeking to serve the nation with pride, discipline, and honor. Join us to be part of a prestigious institution that shapes the future of our country.
+    <section className="py-16 px-4 max-w-7xl mx-auto">
+      
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 recruitment-section">
+        <div className="space-y-6">
+          <p className="text-lg text-neutral-300">
+            The Indian Army offers diverse career opportunities for youth seeking to serve the nation with pride, discipline, and honor.
           </p>
-          <div className="mb-6">
-            <h3 className="text-xl font-semibold mb-2 text-gold-400">Why Join the Indian Army?</h3>
-            <ul className="space-y-2 text-neutral-300">
+          
+          <div className="bg-secondary-800 p-6 rounded-lg">
+            <h3 className="text-xl font-semibold mb-4 text-gold-400">Why Join the Indian Army?</h3>
+            <ul className="space-y-3 text-neutral-300">
               <li className="flex items-start">
                 <span className="text-accent-500 mr-2">✓</span>
                 Prestigious and respected career
@@ -81,7 +83,10 @@ const RecruitmentSection = () => {
               </li>
             </ul>
           </div>
-          <Button variant="accent" to="/careers">View All Opportunities</Button>
+          
+          <div className="text-center lg:text-left">
+            <Button variant="accent" to="/careers">View All Opportunities</Button>
+          </div>
         </div>
         
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -89,16 +94,17 @@ const RecruitmentSection = () => {
             <Link 
               to={item.link} 
               key={index} 
-              className="recruitment-card bg-secondary-700 hover:bg-secondary-600 p-4 rounded-lg transition-all duration-300"
+              className="recruitment-card bg-secondary-700 hover:bg-secondary-600 p-6 rounded-lg transition-all duration-300 flex flex-col h-full"
             >
-              <div className="mb-3">{item.icon}</div>
-              <h3 className="text-lg font-semibold mb-2 text-white">{item.title}</h3>
-              <p className="text-neutral-300 text-sm">{item.description}</p>
+              <div className="mb-4">{item.icon}</div>
+              <h3 className="text-xl font-semibold mb-3 text-white">{item.title}</h3>
+              <p className="text-neutral-300 text-sm flex-grow">{item.description}</p>
+              <span className="text-gold-400 text-sm mt-3 inline-block">Learn more →</span>
             </Link>
           ))}
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

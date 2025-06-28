@@ -54,7 +54,7 @@ const HomePage = () => {
         ref={heroRef}
         className="relative h-screen flex items-center justify-center overflow-hidden"
         style={{
-          backgroundImage: 'url(https://5.imimg.com/data5/UU/EQ/NE/SELLER-15444486/whatsapp-image-2019-12-31-at-2-11-41-pm.jpg)',
+          backgroundImage: 'url(https://maritimeindia.org/wp-content/uploads/2016/08/home_banner_.jpg)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat'
@@ -96,13 +96,20 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* Recruitment Section */}
-      <section className="py-16 bg-secondary-800 text-white">
-        <div className="container">
-          <SectionTitle title="Join the Indian Army" className="text-white" />
-          <RecruitmentSection />
-        </div>
-      </section>
+    {/* Recruitment Section */}
+<section className="py-8 bg-secondary-800 text-white">
+  <div className="container mx-auto px-4">
+    <h1 className="text-2xl md:text-3xl font-bold text-center text-gold-400">
+      Join the Indian Army
+    </h1>
+    <div className="mt-4">
+      <h2 className="text-xl md:text-2xl font-semibold text-center mb-4">
+        Career Opportunities
+      </h2>
+      <RecruitmentSection />
+    </div>
+  </div>
+</section>
 
       {/* Achievements Section */}
       <section className="py-16 bg-white">
