@@ -7,6 +7,9 @@ export default defineConfig({
   host: '0.0.0.0',
   port: 5173, // Hardcode frontend port
     strictPort: true ,// Prevent port fallback
-    allowedHosts: 'all'
+    allowedHosts: ['indian-army-portal-4.onrender.com',
+      'indian-army-portal-5.onrender.com',
+    'localhost' // For local development
+    ]
 }
 });
