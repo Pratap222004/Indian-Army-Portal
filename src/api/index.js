@@ -1,6 +1,7 @@
 import axios from 'axios';
 
-const API = axios.create({ baseURL: 'http://localhost:5001/api' });
+// const API = axios.create({ baseURL: 'http://localhost:5001/api' });
+const API = axios.create({ baseURL: 'https://indian-army-portal-4.onrender.com/api' });
 
 // Add token to headers if it exists
 API.interceptors.request.use((req) => {

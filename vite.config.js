@@ -5,7 +5,8 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   server: {
   host: '0.0.0.0',
-  port: process.env.PORT ? parseInt(process.env.PORT) : 5173,
-  allowedHosts: 'all' // This allows any host
+  port: 5173, // Hardcode frontend port
+    strictPort: true ,// Prevent port fallback
+    allowedHosts: 'all'
 }
 });
