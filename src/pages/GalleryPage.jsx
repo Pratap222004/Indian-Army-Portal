@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef } from 'react'
+import React,{ useEffect, useState, useRef } from 'react'
 import { gsap } from 'gsap'
 import SectionTitle from '../components/common/SectionTitle'
 import { FaImage, FaVideo, FaSearch, FaTimes } from 'react-icons/fa'

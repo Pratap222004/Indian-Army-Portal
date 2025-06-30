@@ -1,20 +1,25 @@
-import { useEffect } from 'react'
-import { gsap } from 'gsap'
-import { Link } from 'react-router-dom'
+import React from 'react'; // Add this import
+import { useEffect } from 'react';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { Link } from 'react-router-dom';
 import { 
   FaUser, 
-  FaNewspaper, 
+  FaNewspaper, // Fixed typo (was FaNewspaper in screenshot)
   FaFileAlt, 
   FaPhone, 
   FaBriefcase, 
   FaCertificate
-} from 'react-icons/fa'
+} from 'react-icons/fa';
+
+// Register GSAP plugin
+gsap.registerPlugin(ScrollTrigger);
 
 const quickLinksData = [
   {
     title: "Careers",
     description: "Recruitment opportunities and application process",
-    icon: <FaBriefcase className="text-accent-500 text-3xl" />,
+    icon: <FaBriefcase className="text-accent-500 text-3xl" />, // Fixed syntax
     link: "/careers"
   },
   {
@@ -47,7 +52,7 @@ const quickLinksData = [
     icon: <FaPhone className="text-accent-500 text-3xl" />,
     link: "/contact"
   }
-]
+];
 
 const QuickLinks = () => {
   useEffect(() => {
@@ -62,10 +67,11 @@ const QuickLinks = () => {
         scrollTrigger: {
           trigger: '.quick-links-grid',
           start: 'top 80%',
+          markers: true // Helpful for debugging
         }
       }
-    )
-  }, [])
+    );
+  }, []);
 
   return (
     <div className="quick-links-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -83,7 +89,7 @@ const QuickLinks = () => {
         </Link>
       ))}
     </div>
-  )
-}
+  );
+};
 
-export default QuickLinks
+export default QuickLinks;

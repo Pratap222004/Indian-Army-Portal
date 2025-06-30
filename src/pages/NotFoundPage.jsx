@@ -1,3 +1,4 @@
+import React from 'react'; // Add this line
 import { Link } from 'react-router-dom'
 import Button from '../components/common/Button'
 

@@ -1,3 +1,5 @@
+import React from 'react'; // Add this line
+
 const Logo = () => {
   return (
     <img 

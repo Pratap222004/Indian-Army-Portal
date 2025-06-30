@@ -1,3 +1,4 @@
+import React from 'react'; // Add this line
 import { Link } from 'react-router-dom'
 
 const Button = ({ 

@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import React,{ useState, useEffect, useRef } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import { gsap } from 'gsap';
 import Logo from './Logo';

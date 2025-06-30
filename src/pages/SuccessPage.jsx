@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import React,{ useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 // In src/pages/SuccessPage.jsx
 import Button from '../components/common/Button'  // Verify this path is correct

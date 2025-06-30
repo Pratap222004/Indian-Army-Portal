@@ -1,3 +1,4 @@
+import React from 'react'; // Add this line
 import { Link } from 'react-router-dom'
 import Logo from './Logo'
 import { FaFacebook, FaTwitter, FaInstagram, FaYoutube, FaPhone, FaEnvelope } from 'react-icons/fa'

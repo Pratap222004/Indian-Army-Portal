@@ -19,14 +19,25 @@ console.log('Environment Variables:', {
 const app = express();
 
 // Enhanced CORS configuration
+// app.use(cors({
+//   origin: process.env.FRONTEND_URL || 'http://localhost:5173',
+//   // origin: 'https://indian-army-portal-4.onrender.com',
+//   methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'],
+//   allowedHeaders: ['Content-Type', 'Authorization'],
+//   credentials: true
+// }));
+
 app.use(cors({
-  // origin: process.env.FRONTEND_URL || 'http://localhost:5173',
-  origin: 'https://indian-army-portal-4.onrender.com',
+  origin: [
+    process.env.FRONTEND_URL, 
+    'https://indian-army-portal-4.onrender.com',
+    'https://indian-army-portal-5.onrender.com',
+    'http://localhost:5173'
+  ],
   methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization'],
   credentials: true
 }));
-
 // Body parser middleware
 app.use(express.json({ limit: '10mb' }));
 app.use(express.urlencoded({ extended: true }));

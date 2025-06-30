@@ -1,3 +1,5 @@
+
+import React from 'react'; // Add this line
 import { useAuth } from '../context/AuthContext'
 
 const ProfilePage = () => {

@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import React,{ useEffect, useState } from 'react'
 import { gsap } from 'gsap'
 import SectionTitle from '../components/common/SectionTitle'
 import Button from '../components/common/Button'
